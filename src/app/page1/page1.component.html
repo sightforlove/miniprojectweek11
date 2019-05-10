@@ -1,0 +1,17 @@
+<ActionBar title="Country Details"></ActionBar>
+
+<!-- <AbsoluteLayout width="900" height="600" backgroundColor="lightblue">
+<label text="this is a trial!"></label> -->
+<ScrollView class="page">
+  <StackLayout backgroundColor="lightblue">
+
+    <label 
+      *ngFor="let country of countries"
+      [text]="country.CountryName"
+      [nsRouterLink]="['/page2',country.CountryName]">      
+    </label>
+    <!-- routing link to the weather and country service -->
+    
+  </StackLayout>
+<!-- </AbsoluteLayout> -->
+</ScrollView>

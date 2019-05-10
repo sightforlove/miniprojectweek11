@@ -1,0 +1,16 @@
+<ActionBar title="Details" class="action-bar"></ActionBar>
+
+<ScrollView class="page">
+
+  <StackLayout  width="400" height="200" backgroundColor="yellow">
+
+    <Label [text]="'Country Code: ' + country.CountryCode" textWrap="true"></Label>
+    <Label [text]="'Country Name: ' + country.CountryName" textWrap="true"></Label>
+    <Label [text]="'Capital Name: ' + country.CapitalName" textWrap="true"></Label>
+    <Label [text]="'Latitude: ' + weather.latitude"></Label>
+    <Label [text]="'Longitude: ' + weather.longitude"></Label>
+    <Label [text]="weather.currently.summary" textWrap="true"></Label>
+    <!-- display all of the information about the country we pick on page 1 -->
+  </StackLayout>
+
+</ScrollView>
